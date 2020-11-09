@@ -35,7 +35,7 @@ class Target {
 
     applyforce() {
         let rndForce = createVector(random(-1, 1), random(-1, 1));
-        rndForce.limit(this.maxforce);
+        rndForce.limit(this.maxforce/2);
         this.acceleration.add(rndForce);
         
         //this.acceleration.add(createVector(0, 0).limit(this.maxforce));

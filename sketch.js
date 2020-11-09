@@ -1,9 +1,12 @@
 let w = 900;
 let h = 900;
 
+let refreshrate = 60;
+
 let game, button, lasttime, time, first;
 
 function setup() {
+	frameRate(refreshrate);
 	createCanvas(w, h);
 	game = new Game(w, h);
 	time = 0;
